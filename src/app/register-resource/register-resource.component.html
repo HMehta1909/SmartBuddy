@@ -1,0 +1,31 @@
+<form [formGroup]="formData" (ngSubmit)="submitForm()">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" required>
+  </div>
+  <div>
+    <label for="empId">Employee ID:</label>
+    <input type="text" id="empId" formControlName="empId" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" required>
+  </div>
+  <div>
+    <label for="primarySkill">Primary Skill:</label>
+    <input type="text" id="primarySkill" formControlName="primarySkill" required>
+  </div>
+  <div>
+    <label for="secondarySkill">Secondary Skill:</label>
+    <input type="text" id="secondarySkill" formControlName="secondarySkill" required>
+  </div>
+  <div>
+    <label for="preferredRole">Preferred Role:</label>
+    <input type="text" id="preferredRole" formControlName="preferredRole" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>

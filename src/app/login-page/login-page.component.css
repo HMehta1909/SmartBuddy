@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body{
+    background-image: url("src\app\login-page\Register.png");
+    background-size:cover;
+    background-size:100%; 
+}
+.Hello{
+    font-family: ROBOTO;
+    margin-left: 21cm;
+    color: aliceblue;
+    padding-top: 4cm;
+    font-size: medium;
+    text-align:center;
+    position: absolute;
+    
+}
+.p{
+    padding-left: 6px;
+    font-weight: lighter;
+}
+.login{
+    padding-top: 3.5cm;
+    font-family:'Raleway';
+    font-weight: 700px;
+    font-size:xx-large;
+    color: #3ab19b;
+}
+.Login-div{
+    position:relative;
+    padding-left: 2cm;
+    padding-bottom: 2cm;
+}
+.matcard{
+    background-color: aliceblue;
+}
+.container{
+    background-color: aliceblue;
+    font-family: 'Raleway';
+}
+.my-form{
+    padding-left: 12ch;
+    padding-top: 5ch;
+    min-width: 100px;
+    max-width: 410px;
+    width: 100%;
+    height: 25cm;
+    position: relative;
+
+  }
+  .my-card{
+    border-radius: 0.5cm;
+    background-color: white;
+  } 
+  .title{
+    border-top-left-radius: 0.5cm;
+    border-top-right-radius: 0.5cm;
+  }
+  .full-width{
+    width: 10cm;
+  }
+  .button1{
+    background-color: #3ab19b;
+    color:#3ab19b;
+    margin-left: 0.3cm;
+    width: 9.9cm;
+    height: 1.5cm;
+  }
+  /* .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color:white;
+} */
+ 
+
+
