@@ -2,13 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import {FormControl, FormGroup, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import { DataService } from 'src/data.service';
-
-
-export interface Role {
-  value: string;
-  viewValue: string;
-}
+import { DataService } from '../register-resource/data.service';
 
 
 @Component({
@@ -21,7 +15,7 @@ export class LoginPageComponent  {
  
 myForm: FormGroup;
   
-selectedRole: string = "";
+selectedRole: any;
 
 users :any;
 data:any;
@@ -30,7 +24,6 @@ data:any;
 
 email:string="";
 password:string ="";
-// role:string="";
 errorMsg="";
 invalidLogin = false;
 selectedOption="";
@@ -54,14 +47,12 @@ ngOnit(): void {
 
 }
 
-roles: Role[] = [
-  {value: 'Candidate-0', viewValue: 'Candidate'},
-  {value: 'Admin-1', viewValue: 'Admin'}
-];
-
+selected = 'Resource';
 
 checkLogin() {
-
+  console.log(this.email);
+  console.log(this.password);
+  console.log(this.selected);
   this.dataService.getUser().subscribe((response: any[]) => {
     if (response.length > 0) {
       for(let x =0; x<response.length; x++){
@@ -70,11 +61,16 @@ checkLogin() {
           break;
         }
       }
-      if(this.data.email == this.email && this.data.password == this.password){
-        this.router.navigate(['rmgHome']);
+      if(this.data.email == this.email && this.data.password == this.password && this.data.role== this.selected){
+          if(this.data.role=="Supervisor"){
+            this.router.navigate(['rmgHome']);
+          }
+          else{
+            this.router.navigate(['resourceHome', this.data.id]);
+          }
       }
       else{
-        alert("check username password");
+        alert("login failed")
       }
     }
   });

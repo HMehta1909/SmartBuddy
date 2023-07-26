@@ -8,7 +8,7 @@
       "primarySkill": "java",
       "secondarySkill": "SpringBoot",
       "preferredRole": "Technical",
-      "role": "Resource",
+      "role": "Supervisor",
       "id": 1
     },
     {
@@ -43,6 +43,175 @@
       "preferredRole": "1234",
       "role": "Resource",
       "id": 4
+    },
+    {
+      "name": "Pavithra E",
+      "empId": "123123",
+      "email": "EPavi@gmail.com",
+      "password": "Pavi@23",
+      "primarySkill": "Java",
+      "secondarySkill": "GCP",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 5
+    }
+  ],
+  "jds": [
+    {
+      "id": 0,
+      "Title": "Java Developer",
+      "Domain": "Java, Spring, SpringBoot",
+      "Account": "MBRDI",
+      "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+    },
+    {
+      "id": 1,
+      "Title": "Java Developer",
+      "Domain": "Java, Spring, SpringBoot",
+      "Account": "MBRDI",
+      "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+    },
+    {
+      "id": 2,
+      "Title": "Java Developer",
+      "Domain": "Java, Spring, SpringBoot",
+      "Account": "dongler",
+      "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+    },
+    {
+      "id": 3,
+      "Title": "Java Developer",
+      "Domain": "Java, Spring, SpringBoot",
+      "Account": "MBRDI",
+      "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+    }
+  ],
+  "nomination": [
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "123456",
+        "email": "himansme3@gmail.com",
+        "password": "Hima@2309",
+        "primarySkill": "as",
+        "secondarySkill": "as",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 3
+      },
+      "jd": {
+        "id": 1,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "46271648",
+        "email": "himansme2@gmail.com",
+        "password": "Hima@23",
+        "primarySkill": "Java",
+        "secondarySkill": "SpringBoot",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 2
+      },
+      "jd": {
+        "id": 0,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 2
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "46271648",
+        "email": "himansme2@gmail.com",
+        "password": "Hima@23",
+        "primarySkill": "Java",
+        "secondarySkill": "SpringBoot",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 2
+      },
+      "jd": {
+        "id": 0,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 3
+    },
+    {
+      "user": {
+        "name": "Pavithra E",
+        "empId": "123123",
+        "email": "EPavi@gmail.com",
+        "password": "Pavi@23",
+        "primarySkill": "Java",
+        "secondarySkill": "GCP",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 5
+      },
+      "jd": {
+        "id": 0,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 4
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "46271648",
+        "email": "himansme2@gmail.com",
+        "password": "Hima@23",
+        "primarySkill": "Java",
+        "secondarySkill": "SpringBoot",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 2
+      },
+      "jd": {
+        "id": 0,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 5
+    },
+    {
+      "user": {
+        "name": "Pavithra E",
+        "empId": "123123",
+        "email": "EPavi@gmail.com",
+        "password": "Pavi@23",
+        "primarySkill": "Java",
+        "secondarySkill": "GCP",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 5
+      },
+      "jd": {
+        "id": 0,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+      },
+      "id": 6
     }
   ]
 }

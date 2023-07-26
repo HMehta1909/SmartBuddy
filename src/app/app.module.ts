@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//import { ReactiveFormsModule } from '@angular/forms';
+// import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -21,16 +21,26 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RmgHomeComponent } from './rmg-home/rmg-home.component';
 import { RegisterResourceComponent } from './register-resource/register-resource.component';
+import { ResourceHomeComponent } from './resource-home/resource-home.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import {MatTableModule} from '@angular/material/table';
+import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     RmgHomeComponent,
-    RegisterResourceComponent
+    RegisterResourceComponent,
+    ResourceHomeComponent,
+    JobDescriptionComponent,
+    EmployeeDashboardComponent,
+    ViewAllResourcesComponent
   ],
   imports: [
     FormsModule,
+    MatTableModule,
     ReactiveFormsModule,
     MatSelectModule,
     BrowserModule,

@@ -1,0 +1,58 @@
+<body>
+  <div class="full">
+  <div class="header">
+
+
+
+              <label id="appname"><strong> Smart Buddy</strong></label>
+              <label id="pgname"><Strong>Supervisor</Strong></label>
+              <button id="logoutbtn" mat-raised-button class="logout">Logout</button>
+
+          </div>
+          <!-- new-component.component.html -->
+
+  <div class="body">
+
+
+  <div class="left">
+    <div class="heading">
+    <h1>View All Resources</h1>
+  </div>
+  <div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Emp Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Primary Skill</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+  <div class="right">
+    <div style="margin-left: 3cm; margin-top: 2cm;">
+   
+    <button mat-raised-button class="button" color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" >JDS</button><br>
+    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
+    color: aliceblue;" mat-raised-button class="button">Add Resources</button>
+    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
+    color: aliceblue;" mat-raised-button class="button">View All Resources</button>
+    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
+    color: aliceblue;" mat-raised-button class="button" >Add JDS</button>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </body>
