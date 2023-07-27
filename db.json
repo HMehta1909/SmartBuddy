@@ -212,6 +212,27 @@
         "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
       },
       "id": 6
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "46271648",
+        "email": "himansme2@gmail.com",
+        "password": "Hima@23",
+        "primarySkill": "Java",
+        "secondarySkill": "SpringBoot",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 2
+      },
+      "jd": {
+        "id": 2,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "dongler",
+        "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+      },
+      "id": 7
     }
   ]
 }
