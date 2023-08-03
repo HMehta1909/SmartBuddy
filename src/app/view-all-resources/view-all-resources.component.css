@@ -93,3 +93,9 @@ padding-right: 30px;
 /* #appname {
   background-image: url("C:\Users\jasmishr\Desktop\SmartBuddy\SmartBuddy\src\assets\smart logo.png");
   } */
+  mat-header-row{
+    width: max-content;
+  }
+  mat-cell{
+    width: max-content;
+  }

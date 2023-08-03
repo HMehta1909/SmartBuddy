@@ -1,42 +1,46 @@
 <body>
   <div class="full">
   <div class="header">
-
-
-
               <label id="appname"><strong> Smart Buddy</strong></label>
               <label id="pgname"><Strong>Supervisor</Strong></label>
               <button id="logoutbtn" mat-raised-button class="logout">Logout</button>
 
           </div>
-          <!-- new-component.component.html -->
-
   <div class="body">
-
-
   <div class="left">
     <div class="heading">
     <h1>View All Resources</h1>
   </div>
   <div>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Emp Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Primary Skill</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let row of tableData">
-        <td>{{ row[0] }}</td>
-        <td>{{ row[1] }}</td>
-        <td>{{ row[2] }}</td>
-        <td>{{ row[3] }}</td>
-      </tr>
-    </tbody>
-  </table>
+    <mat-table [dataSource]="tableData">
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.name }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="empId">
+        <mat-header-cell *matHeaderCellDef>Employee ID</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.empId }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.email }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="password">
+        <mat-header-cell *matHeaderCellDef>Password</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.password }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="primarySkill">
+        <mat-header-cell *matHeaderCellDef>Primary Skill</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.primarySkill }}</mat-cell>
+      </ng-container>
+    
+      <mat-header-row *matHeaderRowDef="['name', 'empId', 'email', 'password', 'primarySkill']"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['name', 'empId', 'email', 'password', 'primarySkill']"></mat-row>
+    </mat-table>  
 </div>
 </div>
 
@@ -52,7 +56,6 @@
     color: aliceblue;" mat-raised-button class="button" >Add JDS</button>
   </div>
   </div>
-
   </div>
   </div>
   </body>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-
+import { ViewAllServiceService } from '../view-all-service.service';
 
 @Component({
   selector: 'app-view-all-resources',
@@ -8,10 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-all-resources.component.css'],
 })
 export class ViewAllResourcesComponent {
-  tableData: any[] = [
-    ['45677388', 'Jasmin', 'gdgf@gmail.com', 'Angular'],
-    ['23255678', 'Saumya', 'hhjhjkn@gmail.com', 'Java'],
-    ['45677388', 'Pavithra', 'gyuerhh@gmail.com', 'Python'],
-    ['45677388', 'Himanshu', 'gegchk@gmail.com', 'SQL'],
-  ];
+  constructor(private dataService: ViewAllServiceService) {}
+
+  tableData: any;
+
+  ngOnInit() {
+    this.foo();
+  }
+  
+  foo() {
+    this.dataService.getUser().subscribe((response: any[]) => {
+      this.tableData = response;
+      console.log(this.tableData);
+    });
+  }
 }
