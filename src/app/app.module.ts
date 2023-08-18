@@ -9,7 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { ToastrModule } from 'ngx-toastr';
+// import { ToastrModule } from 'ngx-toastr';
 import {MatIconModule} from '@angular/material/icon';
 import { MatOptionModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
@@ -26,6 +26,7 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import {MatTableModule} from '@angular/material/table';
 import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
+import { AddJDSComponent } from './add-jds/add-jds.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ViewAllResourcesComponent } from './view-all-resources/view-all-resourc
     ResourceHomeComponent,
     JobDescriptionComponent,
     EmployeeDashboardComponent,
-    ViewAllResourcesComponent
+    ViewAllResourcesComponent,
+    AddJDSComponent
   ],
   imports: [
     FormsModule,
@@ -45,7 +47,7 @@ import { ViewAllResourcesComponent } from './view-all-resources/view-all-resourc
     MatSelectModule,
     BrowserModule,
     AppRoutingModule,
-    ToastrModule.forRoot(),
+    // ToastrModule.forRoot(),
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatOptionModule,
@@ -57,7 +59,7 @@ import { ViewAllResourcesComponent } from './view-all-resources/view-all-resourc
     MatButtonModule,
     MatInputModule,
     HttpClientModule
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

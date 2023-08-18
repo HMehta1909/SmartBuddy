@@ -16,10 +16,10 @@
       "empId": "46271648",
       "email": "himansme2@gmail.com",
       "password": "Hima@23",
-      "primarySkill": "Java",
+      "primarySkill": "JavaEE",
       "secondarySkill": "SpringBoot",
-      "preferredRole": "Technical",
       "role": "Resource",
+      "preferredRole": "Technical",
       "id": 2
     },
     {
@@ -84,6 +84,27 @@
       "Domain": "Java, Spring, SpringBoot",
       "Account": "MBRDI",
       "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+    },
+    {
+      "Title": "New",
+      "Account": "Test",
+      "Domain": "Test",
+      "Description": "Test",
+      "id": 4
+    },
+    {
+      "Title": "test2",
+      "Account": "test",
+      "Domain": "test",
+      "Description": "test",
+      "id": 5
+    },
+    {
+      "Title": "test",
+      "Account": "test",
+      "Domain": "test",
+      "Description": "test",
+      "id": 6
     }
   ],
   "nomination": [

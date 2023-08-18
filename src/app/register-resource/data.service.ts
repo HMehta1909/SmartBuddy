@@ -7,7 +7,7 @@ import { JobDesc, Nomination, UserData } from '../job-description/jobDesc';
 })
 export class DataService {
   private apiUrl = 'http://localhost:3000/users';
-
+  private jdUrl = 'http://localhost:3000/jds';
   private nominationUrl ='http://localhost:3000/nomination';
 
   constructor(private http: HttpClient) { }
@@ -18,6 +18,10 @@ export class DataService {
 
   addUser(user: any) {
     return this.http.post<any>(this.apiUrl, user);
+  }
+
+  addJD(jd: any) {
+    return this.http.post<any>(this.jdUrl, jd);
   }
 
   addNomination(nomination:{
