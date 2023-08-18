@@ -27,6 +27,7 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
 import {MatTableModule} from '@angular/material/table';
 import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
 import { AddJDSComponent } from './add-jds/add-jds.component';
+import { AddResourceComponent } from './add-resource/add-resource.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AddJDSComponent } from './add-jds/add-jds.component';
     JobDescriptionComponent,
     EmployeeDashboardComponent,
     ViewAllResourcesComponent,
-    AddJDSComponent
+    AddJDSComponent,
+    AddResourceComponent
   ],
   imports: [
     FormsModule,

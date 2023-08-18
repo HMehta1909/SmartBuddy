@@ -54,16 +54,31 @@
       "preferredRole": "Technical",
       "role": "Resource",
       "id": 5
+    },
+    {
+      "name": "Test",
+      "empId": "1234",
+      "email": "Test@gmail.com",
+      "password": "1234",
+      "primarySkill": "Java",
+      "secondarySkill": "Test",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 6
+    },
+    {
+      "name": "test2",
+      "empId": "test2",
+      "email": "test@test.test",
+      "password": "test",
+      "primarySkill": "test",
+      "secondarySkill": "test",
+      "preferredRole": "Non-Technical",
+      "role": "Resource",
+      "id": 7
     }
   ],
   "jds": [
-    {
-      "id": 0,
-      "Title": "Java Developer",
-      "Domain": "Java, Spring, SpringBoot",
-      "Account": "MBRDI",
-      "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-    },
     {
       "id": 1,
       "Title": "Java Developer",
@@ -86,25 +101,18 @@
       "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
     },
     {
-      "Title": "New",
-      "Account": "Test",
-      "Domain": "Test",
-      "Description": "Test",
+      "Title": "Test",
+      "Account": "test",
+      "Domain": "test",
+      "Description": "test",
       "id": 4
     },
     {
-      "Title": "test2",
-      "Account": "test",
-      "Domain": "test",
-      "Description": "test",
+      "Title": "Stellar",
+      "Account": "Mercedes",
+      "Domain": "Angular",
+      "Description": "2yrs Exp in Angular",
       "id": 5
-    },
-    {
-      "Title": "test",
-      "Account": "test",
-      "Domain": "test",
-      "Description": "test",
-      "id": 6
     }
   ],
   "nomination": [

@@ -1,8 +1,12 @@
 
 
-import { Component } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { JDService } from '../job-description/job-descripstion.service';
+import { JobDesc } from '../job-description/jobDesc';
+import { DataService } from '../register-resource/data.service';
 
  
 
@@ -12,39 +16,7 @@ interface Resource {
 
 }
 
- 
 
-export interface PeriodicElement {
-
-  name: string;
-
-  // position: number;
-
-  //weight: number;
-
-  // symbol: string;
-
-}
-
- 
-
-const ELEMENT_DATA: PeriodicElement[] = [
-
-  {name: 'MBRDI'},
-
-  {name: 'Mcd'},
-
-  {name: 'RMG'},
-
-  {name: 'Dongler'},
-
-  {name: 'PMO'},
-
-  {name: 'Non-tech'},
-
-  {name: 'FSD'},
-
-];
 
  
 
@@ -60,35 +32,52 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
  
 
-export class RmgHomeComponent {
+export class RmgHomeComponent implements OnInit{
 
  
 
   expandedElement: Resource | null | undefined;
+  dataSource!: JobDesc[];
+ 
+
+  constructor(private router:Router,private jdService: JDService, private dataService: DataService ,private http: HttpClient, private route:ActivatedRoute) {
+    // console.log("Nomination cons",this.nomination);
+  }
+  ngOnInit(): void {
+    this.getJobDescription();
+  }
 
  
 
-  constructor(private router:Router){}
-
- 
-
-  displayedColumns: string[] = ['name'];
-
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['JID', 'Title','Account', 'Domain', 'Description' , 'icos'];
 
  
 
 addJDS() {
-
- 
-
+  this.router.navigate(['addJD']);
 }
 
+viewRes(){
+  this.router.navigate(['viewAllResources']);
+}
+del(id: number) {
+  // Implement your delete logic here
+  console.log('Deleting item with ID:', id);
+  this.jdService.deleteJobDescription(id).subscribe(
+    () => {
+      console.log('Item with ID', id, 'deleted successfully');
+      this.getJobDescription();
+    },
+    (error: any) => {
+      console.error('Error deleting item with ID', id, ':', error);
+    }
+  );
+}
  
 
 viewResources(){
 
-  this.router.navigateByUrl("\viewResource");
+  this.router.navigate(['viewAllResources']);
 
 }
 
@@ -103,97 +92,28 @@ addResources(){
 }
 
  
+logout(){
+  this.router.navigate(['']);
+ }
 
- 
+ public getJobDescription(): void {
 
-//   dataSource: Resource[] = [
+  this.jdService.getJobDescription().subscribe(
 
-//     { department: 'MBRDI' },
+    (response: JobDesc[]) => {
 
-//     { department: 'RMG' },
+      this.dataSource = response;
 
-//     { department: 'PMO' },
+    },
 
-//     { department: 'NON-TECH' },
+    (error: HttpErrorResponse) => {
 
-//     { department: 'Tech' }
+      alert(error.message);
 
-//   ];
+    }
 
- 
-
-//   displayedColumns: string[] = ['department', 'actions'];
-
- 
-
-//   showData(resource: Resource) {
-
-//     // Implement logic to show data for the selected resource
-
-//   }
-
- 
-
-//   showDetails(resource: Resource) {
-
-//     // Implement logic to show details for the selected resource
-
-//   }
-
- 
-
-//   deleteResource(resource: Resource) {
-
-//     // Implement logic to delete the selected resource
-
-//   }
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-//   // displayedColumns: string[] = ['name'];
-
-//   // dataSource = ELEMENT_DATA;
-
- 
-
-// addJDS() {
-
- 
-
-// }
-
- 
-
-// viewResources(){
-
-//   this.router.navigateByUrl("\viewResource");
-
-// }
-
-// removeResources(){}
-
- 
-
-// addResources(){
-
-//   this.router.navigateByUrl("/addResource");
-
-// }
+  )
 
 }
-
  
+}

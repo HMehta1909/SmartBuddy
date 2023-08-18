@@ -32,6 +32,16 @@ export class AddJDSComponent implements OnInit {
     });
   }
 
+  home(){
+    this.router.navigate(['rmgHome']);
+  }
+  logout(){
+    this.router.navigate(['']);
+  }
+  viewResources(){
+    this.router.navigate(['viewAllResources']);
+  }
+
   submitForm() {
     
     if (this.formData.valid) {
@@ -44,7 +54,7 @@ export class AddJDSComponent implements OnInit {
           // Reset the form after successful submission if needed
           this.formData.reset();
           alert("JD added, Redirecting to Home");
-          this.router.navigate(['rmgHome  ']);
+          this.router.navigate(['rmgHome']);
         },
         (error: any) => {
           console.error('Error saving data:', error);

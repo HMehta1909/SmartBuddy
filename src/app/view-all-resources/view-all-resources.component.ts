@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewAllServiceService } from '../view-all-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-all-resources',
@@ -7,8 +8,8 @@ import { ViewAllServiceService } from '../view-all-service.service';
   styleUrls: ['./view-all-resources.component.css'],
 })
 export class ViewAllResourcesComponent {
-  constructor(private dataService: ViewAllServiceService) {}
-
+  constructor(private dataService: ViewAllServiceService , private route : ActivatedRoute , private router:Router) {}
+  
   tableData: any;
 
   ngOnInit() {
@@ -20,5 +21,15 @@ export class ViewAllResourcesComponent {
       this.tableData = response;
       console.log(this.tableData);
     });
+  }
+
+  jds(){
+    this.router.navigate(['rmgHome']);
+  }
+  logout(){
+    this.router.navigate(['']);
+  }
+  addjds(){
+    this.router.navigate(['addJD']);
   }
 }

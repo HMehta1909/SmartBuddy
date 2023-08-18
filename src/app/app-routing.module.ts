@@ -9,6 +9,7 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
 import { AddJDSComponent } from './add-jds/add-jds.component';
+import { AddResourceComponent } from './add-resource/add-resource.component';
 const routes: Routes = [
   {path:'',component:LoginPageComponent},
   {path:'rmgHome', component:RmgHomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'jobdesc/:id',component:JobDescriptionComponent},
   {path:'empDashboard/:id', component:EmployeeDashboardComponent},
   {path:'viewAllResources',component:ViewAllResourcesComponent },
-  {path:'addJD', component:AddJDSComponent}
+  {path:'addJD', component:AddJDSComponent},
+  {path:'addResource', component:AddResourceComponent}
 ];
 
 

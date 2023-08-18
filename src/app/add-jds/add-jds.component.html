@@ -1,68 +1,69 @@
-<body>
-  <div class="full">
-    <div class="header">
-      <label id="appname" class="logo"><strong>Smart Buddy</strong></label>
-      <label id="pgname"><strong>Supervisor</strong></label>
-      <button id="logoutbtn" mat-raised-button class="logout">Logout</button>
-    </div>
+<div class="full">
+  <div class="fst header">
+    <label id="appname"><img src="smart-logo.png"></label>
+    <label id="pgname" style=" font-size: 25px;"><Strong>Supervisor</Strong></label>
+    <button id="logoutbtn" (click)="logout()" mat-raised-button style="margin-right: 1cm;">Logout</button>
+  </div>
+</div>
 
-    <div class="body">
-      <div class="left">
-        <div class="heading">
-          <h1>Add JDS</h1>
-        </div>
-        <form [class.edit-mode]="isEditMode" [formGroup]="formData" (ngSubmit)="submitForm()">
-          <mat-form-field class="anything">
-            <mat-label>Title</mat-label>
-            <input matInput formControlName="Title" [disabled]="!isEditMode" required>
-          </mat-form-field>
-  
-          <mat-form-field class="anything">
-            <mat-label>Account</mat-label>
-            <input matInput formControlName="Account" [disabled]="!isEditMode" required>
-          </mat-form-field>
-  
-          <mat-form-field class="anything">
-            <mat-label>Domain</mat-label>
-            <input matInput formControlName="Domain" [disabled]="!isEditMode" required>
-          </mat-form-field>
-  
-          <mat-form-field class="anything">
-            <mat-label>Description</mat-label>
-            <input matInput formControlName="Description" [disabled]="!isEditMode" required>
-          </mat-form-field>
-  
-          <div class="button-container">
-            <button mat-raised-button class="button" color="primary" style="width: 5cm;">
-              Publish JD
-            </button>
-
-            <button mat-raised-button color="primary" class="edit-button button1" style="width: 5cm;" (click)="toggleEditMode()">
-              <mat-label>{{ isEditMode ? 'Save Draft' : 'Edit' }}</mat-label>
-            </button>
-          </div>
-        </form>
+<div class="grid-container">
+  <div class="left">
+    <div class="table">
+      <div class="heading">
+        <h1>Add JD</h1>
       </div>
-
-      <div class="right">
-        <div style="margin-left: 3cm; margin-top: 2cm;">
-          <button mat-raised-button class="button" color="primary" style="width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;">
-            JDS
-          </button><br>
-
-          <button mat-raised-button class="button" color="primary" style="width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;">
-            Add Resources
-          </button><br>
-
-          <button mat-raised-button class="button" color="primary" style="width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;">
-            View All Resources
-          </button><br>
-
-          <button mat-raised-button class="button" color="primary" style="width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;">
-            Remove Resources
+      <form [class.edit-mode]="isEditMode" [formGroup]="formData" (ngSubmit)="submitForm()">
+        <mat-form-field class="anything">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="Title" [disabled]="!isEditMode" required>
+        </mat-form-field>
+  
+        <mat-form-field class="anything">
+          <mat-label>Account</mat-label>
+          <input matInput formControlName="Account" [disabled]="!isEditMode" required>
+        </mat-form-field>
+  
+        <mat-form-field class="anything">
+          <mat-label>Domain</mat-label>
+          <input matInput formControlName="Domain" [disabled]="!isEditMode" required>
+        </mat-form-field>
+  
+        <mat-form-field class="anything">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="Description" [disabled]="!isEditMode" required>
+        </mat-form-field>
+  
+        <div class="button-container2">
+          <button mat-raised-button class="button edit-button button1" color="primary">
+            Publish JD
+          </button>
+  
+          <button mat-raised-button color="primary" class="edit-button button" (click)="toggleEditMode()">
+            <mat-label>{{ isEditMode ? 'Save Draft' : 'Edit' }}</mat-label>
           </button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
-</body>
+
+  <div class="right">
+    <div class="button-container">
+      <button mat-raised-button class="button" (click)="home()" color="primary">
+        Home
+      </button>
+      <button mat-raised-button class="button" color="primary">
+        Add Resources
+      </button>
+      <button mat-raised-button class="button" (click)="viewResources()" color="primary">
+        View All Resources
+      </button>
+      <button mat-raised-button class="button" color="primary">
+        Remove Resources
+      </button> 
+    </div>
+  </div>
+
+</div>
+
+
+

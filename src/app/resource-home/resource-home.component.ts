@@ -12,7 +12,9 @@ export class ResourceHomeComponent {
   domain: string="";
   requirement : string = "";
   
-
+  logout(){
+    this.router.navigate(['']);
+   }
   checkLogin(){
     alert("logging out ");
   }

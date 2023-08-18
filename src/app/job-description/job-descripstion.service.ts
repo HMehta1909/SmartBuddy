@@ -92,4 +92,13 @@ export class JDService {
     
       }
 
+      deleteJobDescription(id: number): Observable<void> {
+        const url = `${this.url}/${id}`;
+        return this.http.delete<void>(url).pipe(
+          tap(() => console.log(`Job description with ID ${id} deleted successfully`)),
+          catchError(this.handleError)
+        );
+      }
+      
+
 }
