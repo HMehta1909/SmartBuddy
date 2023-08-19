@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-
+import { ViewAllServiceService } from '../view-all-service.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -9,10 +9,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-all-resources.component.css'],
 })
 export class ViewAllResourcesComponent {
-  tableData: any[] = [
-    ['45677388', 'Jasmin', 'gdgf@gmail.com', 'Angular'],
-    ['23255678', 'Saumya', 'hhjhjkn@gmail.com', 'Java'],
-    ['45677388', 'Pavithra', 'gyuerhh@gmail.com', 'Python'],
-    ['45677388', 'Himanshu', 'gegchk@gmail.com', 'SQL'],
-  ];
+  constructor(private dataService: ViewAllServiceService , private route : ActivatedRoute , private router:Router) {}
+  
+  tableData: any;
+
+  ngOnInit() {
+    this.foo();
+  }
+  
+  foo() {
+    this.dataService.getUser().subscribe((response: any[]) => {
+      this.tableData = response.filter(item => item.role === 'Resource');
+      console.log(this.tableData);
+    });
+
+  }
+
+  jds(){
+    this.router.navigate(['rmgHome']);
+  }
+  logout(){
+    this.router.navigate(['']);
+  }
+  addjds(){
+    this.router.navigate(['addJD']);
+  }
 }

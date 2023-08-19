@@ -1,58 +1,71 @@
 <body>
-  <div class="full">
-  <div class="header">
-
-
-
-              <label id="appname"><strong> Smart Buddy</strong></label>
-              <label id="pgname"><Strong>Supervisor</Strong></label>
-              <button id="logoutbtn" mat-raised-button class="logout">Logout</button>
-
-          </div>
-          <!-- new-component.component.html -->
-
-  <div class="body">
-
-
-  <div class="left">
-    <div class="heading">
-    <h1>View All Resources</h1>
+  <div class="full2">
+    <div class="fst header">
+      <label id="appname"><img src="smart-logo.png"></label>
+      <label id="pgname" style=" font-size: 25px;"><Strong>Supervisor</Strong></label>
+      <button id="logoutbtn" (click)="logout()" mat-raised-button style="margin-right: 1cm;">Logout</button>
+    </div>
   </div>
-  <div>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Emp Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Primary Skill</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let row of tableData">
-        <td>{{ row[0] }}</td>
-        <td>{{ row[1] }}</td>
-        <td>{{ row[2] }}</td>
-        <td>{{ row[3] }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-
-  <div class="right">
-    <div style="margin-left: 3cm; margin-top: 2cm;">
-   
-    <button mat-raised-button class="button" color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" >JDS</button><br>
-    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button">Add Resources</button>
-    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button">View All Resources</button>
-    <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button" >Add JDS</button>
+  
+  <div class="grid-container">
+    <div class="left">
+      <div class="table">
+        <div class="heading">
+          <h1>View All Resources</h1>
+        </div>
+        <mat-table [dataSource]="tableData">
+          <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.name }}</mat-cell>
+          </ng-container>
+        
+          <ng-container matColumnDef="empId">
+            <mat-header-cell *matHeaderCellDef>Employee ID</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.empId }}</mat-cell>
+          </ng-container>
+        
+          <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.email }}</mat-cell>
+          </ng-container>        
+          <ng-container matColumnDef="primarySkill">
+            <mat-header-cell *matHeaderCellDef>Primary Skill</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.primarySkill }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="secondarySkill">
+            <mat-header-cell *matHeaderCellDef>Secondary Skill</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.secondarySkill }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="preferredRole">
+            <mat-header-cell *matHeaderCellDef>Preferred Role</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{ row.preferredRole }}</mat-cell>
+          </ng-container>
+        
+          <mat-header-row *matHeaderRowDef="['name', 'empId', 'email', 'primarySkill', 'secondarySkill', 'preferredRole']"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: ['name', 'empId', 'email', 'primarySkill', 'secondarySkill', 'preferredRole']"></mat-row>
+        </mat-table>  
+      </div>
+    </div>
+  
+    <div class="right">
+      <div class="button-container">
+        <button mat-raised-button class="button" (click)="jds()" color="primary">
+          View JDS
+        </button>
+        <button mat-raised-button class="button" color="primary">
+          Add Resources
+        </button>
+        <button mat-raised-button class="button" (click)="addjds()" color="primary">
+          Add JD
+        </button>
+        <button mat-raised-button class="button" color="primary">
+          Remove Resources
+        </button> 
+      </div>
+    </div>
+  
   </div>
-  </div>
-
-  </div>
-  </div>
-  </body>
+  
+  
+  
+ 

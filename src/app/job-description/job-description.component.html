@@ -15,7 +15,7 @@
               <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
             </mat-form-field> -->
             <div class="right">
-              <table mat-table [dataSource]="dataSource" multiTemplateDataRows
+      <table mat-table [dataSource]="dataSource" multiTemplateDataRows
              class="mat-elevation-z8">
              <ng-container matColumnDef="{{column}}" *ngFor="let column of displayedColumns">
               <th mat-header-cell *matHeaderCellDef style="background-color: #54C1AC; width: 35rem;"> {{column}} </th>
