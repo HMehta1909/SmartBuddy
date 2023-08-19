@@ -22,11 +22,10 @@
     <mat-form-field class="anything">
 
     <mat-label>Enter Employee Id:</mat-label>
-    <input  style="margin-left: 2cm;" matInput name="id"formControlName="id" required><br>
+    <input  style="margin-left: 2cm;" #yourInput matInput name="id" formControlName="id" required><br>
     </mat-form-field>
     <button color="primary" style= "width: 10cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button">Remove</button>
-
+    color: aliceblue;" mat-raised-button class="button" (click)="del(yourInput.value)">Remove</button>
   </div>
 
 <div class="right">

@@ -2,28 +2,6 @@
   "users": [
     {
       "name": "Himanshu Mehta",
-      "empId": "46271648",
-      "email": "himansme@gmail.com",
-      "password": "Hima@2309",
-      "primarySkill": "java",
-      "secondarySkill": "SpringBoot",
-      "preferredRole": "Technical",
-      "role": "Supervisor",
-      "id": 1
-    },
-    {
-      "name": "Himanshu Mehta",
-      "empId": "46271648",
-      "email": "himansme2@gmail.com",
-      "password": "Hima@23",
-      "primarySkill": "JavaEE",
-      "secondarySkill": "SpringBoot",
-      "role": "Resource",
-      "preferredRole": "Technical",
-      "id": 2
-    },
-    {
-      "name": "Himanshu Mehta",
       "empId": "123456",
       "email": "himansme3@gmail.com",
       "password": "Hima@2309",
