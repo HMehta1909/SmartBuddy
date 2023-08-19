@@ -42,9 +42,11 @@ export class AddJDSComponent implements OnInit {
     this.router.navigate(['viewAllResources']);
   }
   addResources(){
-    this.router.navigate(['addResources'])
+    this.router.navigate(['addResource'])
   }
-
+  viewNomination(){
+    this.router.navigate(['nominations']);
+  }
   submitForm() {
     
     if (this.formData.valid) {

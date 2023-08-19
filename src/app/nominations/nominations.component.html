@@ -19,8 +19,10 @@
             <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
           </mat-form-field> -->
 
-          <input type="text" [(ngModel)]="inputValue" placeholder="Enter a value">
-          <button (click)="onButtonClick()">Submit</button>
+          <div class="search">
+          <input type="text" [(ngModel)]="inputValue" placeholder="Enter Account Name">
+          <button class="button" mat-raised-button (click)="onButtonClick()">Submit</button>
+          </div>
           
           <mat-table [dataSource]="tableData">
 
@@ -60,10 +62,13 @@
     
       <div class="right">
         <div class="button-container">
+          <button mat-raised-button class="button" (click)="home()" color="primary">
+            Home
+          </button>
           <button mat-raised-button class="button" (click)="jds()" color="primary">
             View JDS
           </button>
-          <button mat-raised-button class="button" color="primary">
+          <button mat-raised-button class="button" (click)="addres()"color="primary">
             Add Resources
           </button>
           <button mat-raised-button class="button" (click)="addjds()" color="primary">

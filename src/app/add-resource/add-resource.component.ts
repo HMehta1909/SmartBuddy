@@ -51,6 +51,9 @@ export class AddResourceComponent {
   home(){
     this.router.navigate(['rmgHome']);
   }
+  viewNomination(){
+    this.router.navigate(['nominations']);
+  }
 
   submitForm(): void {
     if (this.formData.valid) {

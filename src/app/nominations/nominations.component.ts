@@ -38,7 +38,7 @@ export class NominationsComponent {
       this.nominationservice.getUser().subscribe((response: any[]) => {
       
       console.log(this.inputValue);
-      this.tableData = response.filter(item => item.jd.Account === this.inputValue);
+      this.tableData = response.filter(item => item.jd.Account.toLowerCase().includes(this.inputValue.toLowerCase())  );
 
       console.log(this.tableData);
 
@@ -57,6 +57,12 @@ export class NominationsComponent {
   }
   addjds(){
     this.router.navigate(['addJD']);
+  }
+  addres(){
+    this.router.navigate(['addResource']);
+  }
+  home(){
+    this.router.navigate(['rmgHome']);
   }
 
 }
