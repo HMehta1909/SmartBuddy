@@ -24,6 +24,7 @@ export class ViewAllResourcesComponent {
       console.log(this.tableData);
 
     });
+
   }
 
   jds(){
