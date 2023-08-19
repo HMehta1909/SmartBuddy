@@ -81,7 +81,9 @@ viewResources(){
 
 }
 
-removeResources(){}
+removeResources(){
+  alert('remove resouces');
+}
 
  
 

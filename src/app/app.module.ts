@@ -28,6 +28,8 @@ import {MatTableModule} from '@angular/material/table';
 import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
 import { AddJDSComponent } from './add-jds/add-jds.component';
 import { AddResourceComponent } from './add-resource/add-resource.component';
+import { RemoveResourcesComponent } from './remove-resources/remove-resources.component';
+import { NominationsComponent } from './nominations/nominations.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { AddResourceComponent } from './add-resource/add-resource.component';
     EmployeeDashboardComponent,
     ViewAllResourcesComponent,
     AddJDSComponent,
-    AddResourceComponent
+    RemoveResourcesComponent,
+    AddResourceComponent,
+    NominationsComponent
   ],
   imports: [
     FormsModule,

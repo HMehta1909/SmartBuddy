@@ -10,6 +10,9 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
 import { ViewAllResourcesComponent } from './view-all-resources/view-all-resources.component';
 import { AddJDSComponent } from './add-jds/add-jds.component';
 import { AddResourceComponent } from './add-resource/add-resource.component';
+import { RemoveResourcesComponent } from './remove-resources/remove-resources.component';
+import { NominationsComponent } from './nominations/nominations.component';
+
 const routes: Routes = [
   {path:'',component:LoginPageComponent},
   {path:'rmgHome', component:RmgHomeComponent},
@@ -19,7 +22,9 @@ const routes: Routes = [
   {path:'empDashboard/:id', component:EmployeeDashboardComponent},
   {path:'viewAllResources',component:ViewAllResourcesComponent },
   {path:'addJD', component:AddJDSComponent},
-  {path:'addResource', component:AddResourceComponent}
+  {path:'addResource', component:AddResourceComponent},
+  {path: 'removeResource', component:RemoveResourcesComponent},
+  {path:'nominationComp', component:NominationsComponent}
 ];
 
 

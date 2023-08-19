@@ -76,16 +76,20 @@
       "preferredRole": "Non-Technical",
       "role": "Resource",
       "id": 7
+    },
+    {
+      "name": "Saumya Srivastava",
+      "empId": "46271505",
+      "email": "saumya.srivastava@capgemini.com",
+      "password": "saumya@123",
+      "primarySkill": "Java",
+      "secondarySkill": "SpringBoot",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 8
     }
   ],
   "jds": [
-    {
-      "id": 1,
-      "Title": "Java Developer",
-      "Domain": "Java, Spring, SpringBoot",
-      "Account": "MBRDI",
-      "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-    },
     {
       "id": 2,
       "Title": "Java Developer",
@@ -241,6 +245,27 @@
         "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
       },
       "id": 6
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "123456",
+        "email": "himansme3@gmail.com",
+        "password": "Hima@2309",
+        "primarySkill": "as",
+        "secondarySkill": "as",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 3
+      },
+      "jd": {
+        "Title": "Test",
+        "Account": "test",
+        "Domain": "test",
+        "Description": "test",
+        "id": 4
+      },
+      "id": 7
     }
   ]
 }

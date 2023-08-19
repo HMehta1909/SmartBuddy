@@ -18,8 +18,11 @@ export class ViewAllResourcesComponent {
   
   foo() {
     this.dataService.getUser().subscribe((response: any[]) => {
-      this.tableData = response;
+
+      this.tableData = response.filter(item => item.role === 'Resource');
+
       console.log(this.tableData);
+
     });
   }
 

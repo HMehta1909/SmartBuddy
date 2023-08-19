@@ -41,6 +41,9 @@ export class AddJDSComponent implements OnInit {
   viewResources(){
     this.router.navigate(['viewAllResources']);
   }
+  addResources(){
+    this.router.navigate(['addResources'])
+  }
 
   submitForm() {
     
