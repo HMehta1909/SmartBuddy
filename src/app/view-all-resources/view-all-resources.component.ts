@@ -36,4 +36,10 @@ export class ViewAllResourcesComponent {
   addjds(){
     this.router.navigate(['addJD']);
   }
+  addres(){
+    this.router.navigate(['addResource']);
+  }
+  viewNomination(){
+    this.router.navigate(['nominations']);
+  }
 }

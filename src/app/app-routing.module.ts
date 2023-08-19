@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:'addJD', component:AddJDSComponent},
   {path:'addResource', component:AddResourceComponent},
   {path: 'removeResource', component:RemoveResourcesComponent},
-  {path:'nominationComp', component:NominationsComponent}
+  {path:'nominations', component:NominationsComponent}
 ];
 
 
