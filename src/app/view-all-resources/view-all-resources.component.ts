@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ViewAllServiceService } from '../view-all-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-view-all-resources',
   templateUrl: './view-all-resources.component.html',
