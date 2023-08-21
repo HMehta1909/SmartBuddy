@@ -81,7 +81,7 @@ viewResources(){
 
 }
 
-removeResources(){
+removeResource(){
   alert('remove resouces');
 }
 viewNomination(){
