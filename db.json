@@ -31,17 +31,6 @@
       "id": 8
     },
     {
-      "name": "Jasmin Mishra",
-      "empId": "46277150",
-      "email": "mishrajasmin28@gmail.com",
-      "password": "asdfghjkl",
-      "primarySkill": "Java",
-      "secondarySkill": "Angular",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 9
-    },
-    {
       "name": "Test Emp",
       "empId": "001100",
       "email": "testemp@smartbuddy.com",
@@ -51,6 +40,28 @@
       "role": "Resource",
       "preferredRole": "Technical",
       "id": 10
+    },
+    {
+      "name": "Jasmin",
+      "empId": "2804",
+      "email": "jasmin@gmail.com",
+      "password": "dona",
+      "primarySkill": "Ui/Ux",
+      "secondarySkill": "Java",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 11
+    },
+    {
+      "name": "Jasmin Mishra",
+      "empId": "2804",
+      "email": "jasminmishra123@gmail.com",
+      "password": "donadona",
+      "primarySkill": "Ui/Ux",
+      "secondarySkill": "Java",
+      "preferredRole": "Technical",
+      "role": "Supervisor",
+      "id": 12
     }
   ],
   "jds": [

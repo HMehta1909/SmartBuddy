@@ -65,13 +65,14 @@ export class RemoveResourcesComponent {
     this.router.navigate(['addJD']);
   }
   jds(){
-    this.router.navigate(['jds'])
-  }
-  home(){
     this.router.navigate(['rmgHome']);
   }
+
   viewNomination(){
     this.router.navigate(['nominations']);
+  }
+  addResource(){
+    this.router.navigate(['addResource']);
   }
 
 }
