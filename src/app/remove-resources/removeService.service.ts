@@ -11,12 +11,12 @@ export class removeService {
 
   constructor(private http: HttpClient) { }
 
-  deleteResource(id: number) {
-    const url = `${this.apiUrl}/${id}`;
+  deleteResource(empId: String) {
+    const url = `${this.apiUrl}/${empId}`;
 
     return this.http.delete(url).pipe(
       catchError(error => {
-        console.error(`Error deleting item with ID ${id}:`, error);
+        console.error(`Error deleting item with Employee ID ${empId}:`, error);
         throw error; // Rethrow the error to propagate it to the subscriber
       })
     );

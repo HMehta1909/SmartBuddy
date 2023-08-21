@@ -8,7 +8,7 @@ import { JDService } from '../job-description/job-descripstion.service';
 import { JobDesc } from '../job-description/jobDesc';
 import { DataService } from '../register-resource/data.service';
 
- 
+
 
 interface Resource {
 
@@ -18,7 +18,7 @@ interface Resource {
 
 
 
- 
+
 
 @Component({
 
@@ -30,15 +30,15 @@ interface Resource {
 
 })
 
- 
+
 
 export class RmgHomeComponent implements OnInit{
 
- 
+
 
   expandedElement: Resource | null | undefined;
   dataSource!: JobDesc[];
- 
+
 
   constructor(private router:Router,private jdService: JDService, private dataService: DataService ,private http: HttpClient, private route:ActivatedRoute) {
     // console.log("Nomination cons",this.nomination);
@@ -47,11 +47,11 @@ export class RmgHomeComponent implements OnInit{
     this.getJobDescription();
   }
 
- 
+
 
   displayedColumns: string[] = ['JID', 'Title','Account', 'Domain', 'Description' , 'icos'];
 
- 
+
 
 addJDS() {
   this.router.navigate(['addJD']);
@@ -73,7 +73,7 @@ del(id: number) {
     }
   );
 }
- 
+
 
 viewResources(){
 
@@ -81,14 +81,14 @@ viewResources(){
 
 }
 
-removeResources(){
-  alert('remove resouces');
+removeResource(){
+  this.router.navigate(['removeResource']);
 }
 viewNomination(){
   this.router.navigate(['nominations']);
 }
 
- 
+
 
 addResources(){
 
@@ -96,7 +96,7 @@ addResources(){
 
 }
 
- 
+
 logout(){
   this.router.navigate(['']);
  }
@@ -120,5 +120,5 @@ logout(){
   )
 
 }
- 
+
 }

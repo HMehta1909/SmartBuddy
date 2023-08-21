@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { removeService } from './removeService.service';
+import { DataService } from '../register-resource/data.service';
 @Component({
   selector: 'app-remove-resources',
   templateUrl: './remove-resources.component.html',
@@ -13,9 +14,12 @@ import { removeService } from './removeService.service';
 export class RemoveResourcesComponent {
 [x: string]: any;
 
-  constructor(private router:Router,private removeService: removeService ,private http: HttpClient, private route:ActivatedRoute) {
+  constructor(private router:Router,private removeService: removeService ,private http: HttpClient, private route:ActivatedRoute, private dataService:DataService) {
     // console.log("Nomination cons",this.nomination);
+
+
   }
+  tableData:any;
 
   inputValue: string = '';
 
@@ -32,6 +36,19 @@ export class RemoveResourcesComponent {
       }
     );
   }
+
+  onButtonClick(){
+
+
+    this.dataService.getUser().subscribe((response: any[]) => {
+
+      this.tableData = response.filter(item => item.empId === this.inputValue );
+
+      console.log(this.tableData);
+
+    });
+
+}
 
 
   logout(){
@@ -51,6 +68,9 @@ export class RemoveResourcesComponent {
   }
   home(){
     this.router.navigate(['rmgHome']);
+  }
+  viewNomination(){
+    this.router.navigate(['nominations']);
   }
 
 }

@@ -12,39 +12,6 @@
       "id": 4
     },
     {
-      "name": "Pavithra E",
-      "empId": "123123",
-      "email": "EPavi@gmail.com",
-      "password": "Pavi@23",
-      "primarySkill": "Java",
-      "secondarySkill": "GCP",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 5
-    },
-    {
-      "name": "Test",
-      "empId": "1234",
-      "email": "Test@gmail.com",
-      "password": "1234",
-      "primarySkill": "Java",
-      "secondarySkill": "Test",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 6
-    },
-    {
-      "name": "test2",
-      "empId": "test2",
-      "email": "test@test.test",
-      "password": "test",
-      "primarySkill": "test",
-      "secondarySkill": "test",
-      "preferredRole": "Non-Technical",
-      "role": "Resource",
-      "id": 7
-    },
-    {
       "name": "Saumya Srivastava",
       "empId": "46271505",
       "email": "saumya.srivastava@capgemini.com",
@@ -54,17 +21,6 @@
       "preferredRole": "Technical",
       "role": "Resource",
       "id": 8
-    },
-    {
-      "name": "Jasmin Mishra",
-      "empId": "46277150",
-      "email": "mishrajasmin28@gmail.com",
-      "password": "asdfghjkl",
-      "primarySkill": "Java",
-      "secondarySkill": "Angular",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 9
     },
     {
       "name": "Jasmin Mishra",
@@ -255,6 +211,27 @@
         "id": 4
       },
       "id": 7
+    },
+    {
+      "user": {
+        "name": "Jasmin Mishra",
+        "empId": "46277150",
+        "email": "mishrajasmin28@gmail.com",
+        "password": "asdfghjkl",
+        "primarySkill": "Java",
+        "secondarySkill": "Angular",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 9
+      },
+      "jd": {
+        "id": 3,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "MBRDI",
+        "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+      },
+      "id": 8
     }
   ]
 }
