@@ -81,7 +81,7 @@ export class EmployeeDashboardComponent implements OnInit {
         .subscribe(response => {
           console.log('User updated successfully:', response);
           window.prompt("User updated successfully","Returning to home");
-          this.router.navigate(['']);
+          this.router.navigate([`resourceHome/${this.id}`]);
         });
     }
   }

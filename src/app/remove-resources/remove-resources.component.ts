@@ -29,10 +29,11 @@ export class RemoveResourcesComponent {
     this.removeService.deleteResource(id).subscribe(
       () => {
         console.log('Item with ID', id, 'deleted successfully');
-        alert('Resources deleted successfully');
+        alert('Resource deleted successfully');
       },
       (error: any) => {
         console.error('Error deleting item with ID', id, ':', error);
+        alert('No such Resource found please check ID');
       }
     );
   }

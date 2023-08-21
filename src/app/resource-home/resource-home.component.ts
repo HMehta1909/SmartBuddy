@@ -30,4 +30,5 @@ jobDesc(){
 removeResource(){
   this.router.navigate(['removeResource']);
 }
+
 }
