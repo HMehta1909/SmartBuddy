@@ -6,7 +6,7 @@
       <button id="logoutbtn" (click)="logout()" mat-raised-button style="margin-right: 1cm;">Logout</button>
     </div>
   </div>
-  
+
   <div class="grid-container">
     <div class="left">
       <div class="table">
@@ -18,16 +18,16 @@
             <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
             <mat-cell *matCellDef="let row">{{ row.name }}</mat-cell>
           </ng-container>
-        
+
           <ng-container matColumnDef="empId">
             <mat-header-cell *matHeaderCellDef>Employee ID</mat-header-cell>
             <mat-cell *matCellDef="let row">{{ row.empId }}</mat-cell>
           </ng-container>
-        
+
           <ng-container matColumnDef="email">
             <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
             <mat-cell *matCellDef="let row">{{ row.email }}</mat-cell>
-          </ng-container>        
+          </ng-container>
           <ng-container matColumnDef="primarySkill">
             <mat-header-cell *matHeaderCellDef>Primary Skill</mat-header-cell>
             <mat-cell *matCellDef="let row">{{ row.primarySkill }}</mat-cell>
@@ -40,13 +40,13 @@
             <mat-header-cell *matHeaderCellDef>Preferred Role</mat-header-cell>
             <mat-cell *matCellDef="let row">{{ row.preferredRole }}</mat-cell>
           </ng-container>
-        
+
           <mat-header-row *matHeaderRowDef="['name', 'empId', 'email', 'primarySkill', 'secondarySkill', 'preferredRole']"></mat-header-row>
           <mat-row *matRowDef="let row; columns: ['name', 'empId', 'email', 'primarySkill', 'secondarySkill', 'preferredRole']"></mat-row>
-        </mat-table>  
+        </mat-table>
       </div>
     </div>
-  
+
     <div class="right">
       <div class="button-container">
         <button mat-raised-button class="button" (click)="jds()" color="primary">
@@ -58,17 +58,16 @@
         <button mat-raised-button class="button" (click)="addjds()" color="primary">
           Add JD
         </button>
-        <button mat-raised-button class="button" color="primary">
+        <button mat-raised-button class="button" (click)="removeResource()" color="primary">
           Remove Resources
         </button>
         <button mat-raised-button class="button" (click)="viewNomination()" color="primary">
           View Nominations
-        </button> 
+        </button>
       </div>
     </div>
-  
+
   </div>
-  
-  
-  
- 
+
+
+

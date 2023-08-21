@@ -7,6 +7,9 @@ import { removeService } from './removeService.service';
   templateUrl: './remove-resources.component.html',
   styleUrls: ['./remove-resources.component.css']
 })
+
+
+
 export class RemoveResourcesComponent {
 [x: string]: any;
 
@@ -29,4 +32,24 @@ export class RemoveResourcesComponent {
       }
     );
   }
+
+  logout(){
+    this.router.navigate(['']);
+  }
+  viewResources(){
+    this.router.navigate(['viewAllResources']);
+  }
+  addResources(){
+    this.router.navigate(['addResource'])
+  }
+  addjds(){
+    this.router.navigate(['addJD']);
+  }
+  jds(){
+    this.router.navigate(['jds'])
+  }
+  home(){
+    this.router.navigate(['rmgHome']);
+  }
+
 }

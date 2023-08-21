@@ -6,7 +6,7 @@
         <button id="logoutbtn" (click)="logout()" mat-raised-button style="margin-right: 1cm;">Logout</button>
       </div>
     </div>
-    
+
     <div class="grid-container">
       <div class="left">
         <div class="table">
@@ -23,7 +23,7 @@
           <input type="text" [(ngModel)]="inputValue" placeholder="Enter Account Name">
           <button class="button" mat-raised-button (click)="onButtonClick()">Submit</button>
           </div>
-          
+
           <mat-table [dataSource]="tableData">
 
 
@@ -31,16 +31,16 @@
               <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
               <mat-cell *matCellDef="let row">{{ row.user.name }}</mat-cell>
             </ng-container>
-          
+
             <ng-container matColumnDef="empId">
               <mat-header-cell *matHeaderCellDef>Employee ID</mat-header-cell>
               <mat-cell *matCellDef="let row">{{ row.user.empId }}</mat-cell>
             </ng-container>
-          
+
             <ng-container matColumnDef="email">
               <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
               <mat-cell *matCellDef="let row">{{ row.user.email }}</mat-cell>
-            </ng-container>        
+            </ng-container>
             <ng-container matColumnDef="primarySkill">
               <mat-header-cell *matHeaderCellDef>Primary Skill</mat-header-cell>
               <mat-cell *matCellDef="let row">{{ row.user.primarySkill }}</mat-cell>
@@ -53,13 +53,13 @@
               <mat-header-cell *matHeaderCellDef>Account Nominated</mat-header-cell>
               <mat-cell *matCellDef="let row">{{ row.jd.Account}}</mat-cell>
             </ng-container>
-          
+
             <mat-header-row *matHeaderRowDef="['name', 'empId', 'email', 'primarySkill', 'secondarySkill','Account']"></mat-header-row>
             <mat-row *matRowDef="let row; columns: ['name', 'empId', 'email', 'primarySkill', 'secondarySkill','Account']"></mat-row>
-          </mat-table>  
+          </mat-table>
         </div>
       </div>
-    
+
       <div class="right">
         <div class="button-container">
           <button mat-raised-button class="button" (click)="home()" color="primary">
@@ -74,14 +74,13 @@
           <button mat-raised-button class="button" (click)="addjds()" color="primary">
             Add JD
           </button>
-          <button mat-raised-button class="button" color="primary">
+          <button mat-raised-button class="button" (click)="removeResource()" color="primary">
             Remove Resources
-          </button> 
+          </button>
         </div>
       </div>
-    
+
     </div>
-    
-    
-    
-   
+
+
+

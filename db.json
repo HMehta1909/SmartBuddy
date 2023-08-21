@@ -2,17 +2,6 @@
   "users": [
     {
       "name": "Himanshu Mehta",
-      "empId": "123456",
-      "email": "himansme3@gmail.com",
-      "password": "Hima@2309",
-      "primarySkill": "as",
-      "secondarySkill": "as",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 3
-    },
-    {
-      "name": "Himanshu Mehta",
       "empId": "123456789",
       "email": "himansme4@gmail.com",
       "password": "Hima@2309",
@@ -65,6 +54,28 @@
       "preferredRole": "Technical",
       "role": "Resource",
       "id": 8
+    },
+    {
+      "name": "Jasmin Mishra",
+      "empId": "46277150",
+      "email": "mishrajasmin28@gmail.com",
+      "password": "asdfghjkl",
+      "primarySkill": "Java",
+      "secondarySkill": "Angular",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 9
+    },
+    {
+      "name": "Jasmin Mishra",
+      "empId": "46277150",
+      "email": "mishrajasmin@gmail.com",
+      "password": "ddodondona",
+      "primarySkill": "Java",
+      "secondarySkill": "Angular",
+      "preferredRole": "Technical",
+      "role": "Supervisor",
+      "id": 10
     }
   ],
   "jds": [
