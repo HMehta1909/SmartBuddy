@@ -7,6 +7,9 @@ import { removeService } from './removeService.service';
   templateUrl: './remove-resources.component.html',
   styleUrls: ['./remove-resources.component.css']
 })
+
+
+
 export class RemoveResourcesComponent {
 [x: string]: any;
 
@@ -22,11 +25,32 @@ export class RemoveResourcesComponent {
     this.removeService.deleteResource(id).subscribe(
       () => {
         console.log('Item with ID', id, 'deleted successfully');
-        alert('Resources deleted successfully');
+        alert('Resource deleted successfully');
       },
       (error: any) => {
         console.error('Error deleting item with ID', id, ':', error);
+        alert('No such Resource found please check ID');
       }
     );
   }
+
+  logout(){
+    this.router.navigate(['']);
+  }
+  viewResources(){
+    this.router.navigate(['viewAllResources']);
+  }
+  addResources(){
+    this.router.navigate(['addResource'])
+  }
+  addjds(){
+    this.router.navigate(['addJD']);
+  }
+  jds(){
+    this.router.navigate(['jds'])
+  }
+  home(){
+    this.router.navigate(['rmgHome']);
+  }
+
 }

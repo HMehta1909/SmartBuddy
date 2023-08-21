@@ -11,7 +11,7 @@ export class ResourceHomeComponent {
   title:string=""
   domain: string="";
   requirement : string = "";
-  
+
   logout(){
     this.router.navigate(['']);
    }
@@ -27,4 +27,8 @@ empdash(){
 jobDesc(){
   this.router.navigate(['jobdesc',this.route.snapshot.params['id']]);
 }
+removeResource(){
+  this.router.navigate(['removeResource']);
+}
+
 }

@@ -9,13 +9,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ViewAllResourcesComponent {
   constructor(private dataService: ViewAllServiceService , private route : ActivatedRoute , private router:Router) {}
-  
+
   tableData: any;
 
   ngOnInit() {
     this.foo();
   }
-  
+
   foo() {
     this.dataService.getUser().subscribe((response: any[]) => {
 
@@ -41,5 +41,8 @@ export class ViewAllResourcesComponent {
   }
   viewNomination(){
     this.router.navigate(['nominations']);
+  }
+  removeResource(){
+    this.router.navigate(['removeResource']);
   }
 }

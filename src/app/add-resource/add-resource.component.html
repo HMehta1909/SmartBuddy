@@ -5,7 +5,7 @@
       <button id="logoutbtn"  mat-raised-button style="margin-right: 1cm;" (click)="logout()">Logout</button>
     </div>
   </div>
-  
+
   <div class="grid-container">
     <div class="left">
       <div class="table">
@@ -64,7 +64,7 @@
           </form>
       </div>
     </div>
-  
+
     <div class="right">
       <div class="button-container">
         <button mat-raised-button class="button" (click)="home()" color="primary">
@@ -76,13 +76,13 @@
         <button mat-raised-button class="button" (click)="viewRes()" color="primary">
           View All Resources
         </button>
-        <button mat-raised-button class="button" color="primary">
+        <button mat-raised-button class="button" (click)="removeResource()" color="primary">
           Remove Resources
         </button>
         <button mat-raised-button class="button" (click)="viewNomination()" color="primary">
           View Nominations
-        </button> 
+        </button>
       </div>
     </div>
-  
+
   </div>

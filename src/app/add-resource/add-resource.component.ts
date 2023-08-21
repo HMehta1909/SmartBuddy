@@ -42,7 +42,7 @@ export class AddResourceComponent {
     this.router.navigate(['']);
   }
   addjds(){
-    
+
     this.router.navigate(['addJD']);
   }
   viewRes(){
@@ -53,6 +53,9 @@ export class AddResourceComponent {
   }
   viewNomination(){
     this.router.navigate(['nominations']);
+  }
+  removeResource(){
+    this.router.navigate(['removeResource']);
   }
 
   submitForm(): void {

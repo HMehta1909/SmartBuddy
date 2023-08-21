@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class NominationsComponent {
 
   constructor(private nominationservice: NominationServiceService , private route : ActivatedRoute , private router:Router) {}
-  
+
   tableData: any;
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class NominationsComponent {
 
   inputValue: string = ''; // Property to store the input value
 
-  
+
   foo() {
     this.nominationservice.getUser().subscribe((response: any[]) => {
       this.tableData = response;
@@ -36,7 +36,7 @@ export class NominationsComponent {
 
   onButtonClick(){
       this.nominationservice.getUser().subscribe((response: any[]) => {
-      
+
       console.log(this.inputValue);
       this.tableData = response.filter(item => item.jd.Account.toLowerCase().includes(this.inputValue.toLowerCase())  );
 
@@ -63,6 +63,9 @@ export class NominationsComponent {
   }
   home(){
     this.router.navigate(['rmgHome']);
+  }
+  removeResource(){
+    this.router.navigate(['removeResource']);
   }
 
 }

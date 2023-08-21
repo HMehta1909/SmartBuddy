@@ -2,25 +2,22 @@
   "users": [
     {
       "name": "Himanshu Mehta",
+      "empId": "46271648",
+      "email": "Supervisor@smartbuddy.com",
+      "password": "Hima@2309",
+      "role": "Supervisor",
+      "id": 1
+    },
+    {
+      "name": "Himanshu Mehta",
       "empId": "123456",
-      "email": "himansme3@gmail.com",
+      "email": "himansme2@gmail.com",
       "password": "Hima@2309",
       "primarySkill": "as",
       "secondarySkill": "as",
       "preferredRole": "Technical",
       "role": "Resource",
       "id": 3
-    },
-    {
-      "name": "Himanshu Mehta",
-      "empId": "123456789",
-      "email": "himansme4@gmail.com",
-      "password": "Hima@2309",
-      "primarySkill": "12345",
-      "secondarySkill": "12345",
-      "preferredRole": "1234",
-      "role": "Resource",
-      "id": 4
     },
     {
       "name": "Pavithra E",
@@ -76,6 +73,17 @@
       "role": "Resource",
       "preferredRole": "Technical",
       "id": 9
+    },
+    {
+      "name": "Test Emp",
+      "empId": "001100",
+      "email": "testemp@smartbuddy.com",
+      "password": "Hima@2309",
+      "primarySkill": "test2",
+      "secondarySkill": "test2",
+      "role": "Resource",
+      "preferredRole": "Technical",
+      "id": 10
     }
   ],
   "jds": [
@@ -106,6 +114,13 @@
       "Domain": "Angular",
       "Description": "2yrs Exp in Angular",
       "id": 5
+    },
+    {
+      "Title": "TestJD",
+      "Account": "TestJD",
+      "Domain": "TESTJD",
+      "Description": "TESTJD",
+      "id": 6
     }
   ],
   "nomination": [
@@ -276,6 +291,48 @@
         "id": 4
       },
       "id": 8
+    },
+    {
+      "user": {
+        "name": "Himanshu Mehta",
+        "empId": "123456",
+        "email": "himansme2@gmail.com",
+        "password": "Hima@2309",
+        "primarySkill": "as",
+        "secondarySkill": "as",
+        "preferredRole": "Technical",
+        "role": "Resource",
+        "id": 3
+      },
+      "jd": {
+        "id": 2,
+        "Title": "Java Developer",
+        "Domain": "Java, Spring, SpringBoot",
+        "Account": "dongler",
+        "Description": "Good knowledge in Java, Java 8 , Streams, spring springboot and cloud"
+      },
+      "id": 9
+    },
+    {
+      "user": {
+        "name": "Test Emp",
+        "empId": "001100",
+        "email": "testemp@smartbuddy.com",
+        "password": "Hima@2309",
+        "primarySkill": "test2",
+        "secondarySkill": "test2",
+        "role": "Resource",
+        "preferredRole": "Technical",
+        "id": 10
+      },
+      "jd": {
+        "Title": "Test",
+        "Account": "test",
+        "Domain": "test",
+        "Description": "test",
+        "id": 4
+      },
+      "id": 10
     }
   ]
 }

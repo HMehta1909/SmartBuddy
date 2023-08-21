@@ -6,7 +6,7 @@
 
             <label id="pgname"><Strong>Supervisor</Strong></label>
 
-            <button id="logoutbtn" mat-raised-button class="logout">Logout</button>
+            <button id="logoutbtn" mat-raised-button (click)='logout()' class="logout">Logout</button>
 
         </div>
         <!-- new-component.component.html -->
@@ -24,20 +24,16 @@
     <mat-label>Enter Employee Id:</mat-label>
     <input  style="margin-left: 2cm;" #yourInput matInput name="id" formControlName="id" required><br>
     </mat-form-field>
-    <button color="primary" style= "width: 10cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button" (click)="del(yourInput.value)">Remove</button>
+    <button color="primary" style= "width: 10cm;   font-family: ROBOTO;" mat-raised-button class="button" (click)="del(yourInput.value)">Remove</button>
   </div>
 
 <div class="right">
   <div style="margin-left: 3cm; margin-top: 2cm;">
-  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-  color: aliceblue;" mat-raised-button class="button">JDS</button><br>
-  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-  color: aliceblue;" mat-raised-button class="button">Add Resources</button>
-  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-  color: aliceblue;" mat-raised-button class="button">View All Resources</button>
-  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;
-  color: aliceblue;" mat-raised-button class="button">Add JDS</button>
+  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" mat-raised-button class="button" (click)="home()">JDS</button><br>
+  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" mat-raised-button class="button" (click)="addResources()">Add Resources</button>
+  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" mat-raised-button class="button" (click)="viewResources()">View All Resources</button>
+  <button color="primary" style= "width: 10cm; height: 1.3cm; margin-bottom: 0.6cm;   font-family: ROBOTO;" mat-raised-button class="button" (click)="addjds()">Add JDS</button>
+
 </div>
 </div>
 

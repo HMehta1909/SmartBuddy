@@ -17,30 +17,30 @@
           <mat-label>Title</mat-label>
           <input matInput formControlName="Title" [disabled]="!isEditMode" required>
         </mat-form-field>
-  
+
         <mat-form-field class="anything">
           <mat-label>Account</mat-label>
           <input matInput formControlName="Account" [disabled]="!isEditMode" required>
         </mat-form-field>
-  
+
         <mat-form-field class="anything">
           <mat-label>Domain</mat-label>
           <input matInput formControlName="Domain" [disabled]="!isEditMode" required>
         </mat-form-field>
-  
+
         <mat-form-field class="anything">
           <mat-label>Description</mat-label>
           <input matInput formControlName="Description" [disabled]="!isEditMode" required>
         </mat-form-field>
-  
+
         <div class="button-container2">
           <button mat-raised-button class="button edit-button button1" color="primary">
             Publish JD
           </button>
-  
-          <button mat-raised-button color="primary" class="edit-button button" (click)="toggleEditMode()">
+
+          <!-- <button mat-raised-button color="primary" class="edit-button button" (click)="toggleEditMode()">
             <mat-label>{{ isEditMode ? 'Save Draft' : 'Edit' }}</mat-label>
-          </button>
+          </button> -->
         </div>
       </form>
     </div>
@@ -57,12 +57,12 @@
       <button mat-raised-button class="button" (click)="viewResources()" color="primary">
         View All Resources
       </button>
-      <button mat-raised-button class="button" color="primary">
+      <button mat-raised-button class="button" (click)="removeResource()" color="primary">
         Remove Resources
       </button>
       <button mat-raised-button class="button" (click)="viewNomination()" color="primary">
         View Nominations
-      </button>  
+      </button>
     </div>
   </div>
 

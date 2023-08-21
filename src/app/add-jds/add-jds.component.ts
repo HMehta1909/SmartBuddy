@@ -47,11 +47,14 @@ export class AddJDSComponent implements OnInit {
   viewNomination(){
     this.router.navigate(['nominations']);
   }
+  removeResource(){
+    this.router.navigate(['removeResource']);
+  }
   submitForm() {
-    
+
     if (this.formData.valid) {
       const formDataValue = this.formData.value; // Get the form values
-      
+
       // Call the dataService to save the form data
       this.dataService.addJD(formDataValue).subscribe(
         (response: any) => {
