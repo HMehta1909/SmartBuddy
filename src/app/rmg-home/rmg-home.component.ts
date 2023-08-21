@@ -82,7 +82,7 @@ viewResources(){
 }
 
 removeResource(){
-  alert('remove resouces');
+  this.router.navigate(['removeResource']);
 }
 viewNomination(){
   this.router.navigate(['nominations']);
