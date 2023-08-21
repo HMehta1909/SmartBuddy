@@ -4,7 +4,7 @@
       "name": "Himanshu Mehta",
       "empId": "46271648",
       "email": "Supervisor@smartbuddy.com",
-      "password": "Hima@2309",
+      "password": "Smart@2309",
       "role": "Supervisor",
       "id": 1
     },
@@ -17,7 +17,7 @@
       "secondarySkill": "as",
       "preferredRole": "Technical",
       "role": "Resource",
-      "id": 3
+      "id": 2
     },
     {
       "name": "Saumya Srivastava",
@@ -28,18 +28,29 @@
       "secondarySkill": "SpringBoot",
       "preferredRole": "Technical",
       "role": "Resource",
-      "id": 8
+      "id": 3
     },
     {
       "name": "Jasmin Mishra",
-      "empId": "2804",
+      "empId": "280400",
       "email": "jasminmishra123@gmail.com",
       "password": "donadona",
       "primarySkill": "Ui/Ux",
       "secondarySkill": "Java",
       "preferredRole": "Technical",
-      "role": "Supervisor",
-      "id": 12
+      "role": "Resource",
+      "id": 4
+    },
+    {
+      "name": "Himanshu Mehta",
+      "empId": "999999",
+      "email": "Employee@smartbuddy.com",
+      "password": "Smart@2309",
+      "primarySkill": "Java",
+      "secondarySkill": "Angular",
+      "preferredRole": "Technical",
+      "role": "Resource",
+      "id": 5
     }
   ],
   "jds": [
@@ -83,149 +94,23 @@
     {
       "user": {
         "name": "Himanshu Mehta",
-        "empId": "123456",
-        "email": "himansme3@gmail.com",
+        "empId": "999999",
+        "email": "Employee@smartbuddy.com",
         "password": "Hima@2309",
-        "primarySkill": "as",
-        "secondarySkill": "as",
+        "primarySkill": "Java",
+        "secondarySkill": "Angular",
         "preferredRole": "Technical",
         "role": "Resource",
-        "id": 3
+        "id": 5
       },
       "jd": {
-        "id": 1,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
+        "Title": "TestJD",
+        "Account": "TestJD",
+        "Domain": "TESTJD",
+        "Description": "TESTJD",
+        "id": 6
       },
       "id": 1
-    },
-    {
-      "user": {
-        "name": "Himanshu Mehta",
-        "empId": "46271648",
-        "email": "himansme2@gmail.com",
-        "password": "Hima@23",
-        "primarySkill": "Java",
-        "secondarySkill": "SpringBoot",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 2
-      },
-      "jd": {
-        "id": 0,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-      },
-      "id": 2
-    },
-    {
-      "user": {
-        "name": "Himanshu Mehta",
-        "empId": "46271648",
-        "email": "himansme2@gmail.com",
-        "password": "Hima@23",
-        "primarySkill": "Java",
-        "secondarySkill": "SpringBoot",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 2
-      },
-      "jd": {
-        "id": 0,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-      },
-      "id": 3
-    },
-    {
-      "user": {
-        "name": "Pavithra E",
-        "empId": "123123",
-        "email": "EPavi@gmail.com",
-        "password": "Pavi@23",
-        "primarySkill": "Java",
-        "secondarySkill": "GCP",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 5
-      },
-      "jd": {
-        "id": 0,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-      },
-      "id": 4
-    },
-    {
-      "user": {
-        "name": "Himanshu Mehta",
-        "empId": "46271648",
-        "email": "himansme2@gmail.com",
-        "password": "Hima@23",
-        "primarySkill": "Java",
-        "secondarySkill": "SpringBoot",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 2
-      },
-      "jd": {
-        "id": 0,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-      },
-      "id": 5
-    },
-    {
-      "user": {
-        "name": "Pavithra E",
-        "empId": "123123",
-        "email": "EPavi@gmail.com",
-        "password": "Pavi@23",
-        "primarySkill": "Java",
-        "secondarySkill": "GCP",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 5
-      },
-      "jd": {
-        "id": 0,
-        "Title": "Java Developer",
-        "Domain": "Java, Spring, SpringBoot",
-        "Account": "MBRDI",
-        "Description": "good knowledge in Java, Java 8 , streams , spring springboot and cloud"
-      },
-      "id": 6
-    },
-    {
-      "user": {
-        "name": "Himanshu Mehta",
-        "empId": "123456",
-        "email": "himansme3@gmail.com",
-        "password": "Hima@2309",
-        "primarySkill": "as",
-        "secondarySkill": "as",
-        "preferredRole": "Technical",
-        "role": "Resource",
-        "id": 3
-      },
-      "jd": {
-        "Title": "Test",
-        "Account": "test",
-        "Domain": "test",
-        "Description": "test",
-        "id": 4
-      },
-      "id": 7
     }
   ]
 }
