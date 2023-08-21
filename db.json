@@ -31,28 +31,6 @@
       "id": 8
     },
     {
-      "name": "Test Emp",
-      "empId": "001100",
-      "email": "testemp@smartbuddy.com",
-      "password": "Hima@2309",
-      "primarySkill": "test2",
-      "secondarySkill": "test2",
-      "role": "Resource",
-      "preferredRole": "Technical",
-      "id": 10
-    },
-    {
-      "name": "Jasmin",
-      "empId": "2804",
-      "email": "jasmin@gmail.com",
-      "password": "dona",
-      "primarySkill": "Ui/Ux",
-      "secondarySkill": "Java",
-      "preferredRole": "Technical",
-      "role": "Resource",
-      "id": 11
-    },
-    {
       "name": "Jasmin Mishra",
       "empId": "2804",
       "email": "jasminmishra123@gmail.com",

@@ -55,14 +55,11 @@
       <div class="heading">
         <h1>Remove Resource</h1>
       </div>
-      <p>Enter Employee Id:</p>
     <mat-form-field class="anything">
-
-    <mat-label>Enter Employee Id:</mat-label>
-    <input  style="margin-left: 2cm;" #yourInput matInput name="id" formControlName="id" required><br>
+      <mat-label>Employee Id:</mat-label>
+      <input #yourInput matInput name="id" formControlName="id" required><br>
     </mat-form-field>
-    <button color="primary" style= "width: 10cm;   font-family: ROBOTO;
-    color: aliceblue;" mat-raised-button class="button" (click)="del(yourInput.value)">Remove</button>
+    <button color="primary" style= "width: 10cm; font-family: ROBOTO;" mat-raised-button class="button" (click)="del(yourInput.value)">Remove</button>
   </div>
   </div>
 
