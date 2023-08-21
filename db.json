@@ -65,6 +65,17 @@
       "preferredRole": "Technical",
       "role": "Resource",
       "id": 8
+    },
+    {
+      "name": "ftest",
+      "empId": "1111111",
+      "email": "ftest@ftest.ftest",
+      "password": "ftest",
+      "primarySkill": "ftest",
+      "secondarySkill": "ftest1",
+      "role": "Resource",
+      "preferredRole": "Technical",
+      "id": 9
     }
   ],
   "jds": [
@@ -244,6 +255,27 @@
         "id": 4
       },
       "id": 7
+    },
+    {
+      "user": {
+        "name": "ftest",
+        "empId": "1111111",
+        "email": "ftest@ftest.ftest",
+        "password": "ftest",
+        "primarySkill": "ftest",
+        "secondarySkill": "ftest1",
+        "role": "Resource",
+        "preferredRole": "Technical",
+        "id": 9
+      },
+      "jd": {
+        "Title": "Test",
+        "Account": "test",
+        "Domain": "test",
+        "Description": "test",
+        "id": 4
+      },
+      "id": 8
     }
   ]
 }
