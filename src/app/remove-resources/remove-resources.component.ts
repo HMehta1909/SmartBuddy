@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { removeService } from './removeService.service';
 import { DataService } from '../register-resource/data.service';
-import { switchMap, tap } from 'rxjs/operators';
+
 @Component({
   selector: 'app-remove-resources',
   templateUrl: './remove-resources.component.html',
@@ -20,7 +20,6 @@ export class RemoveResourcesComponent {
 
   }
   tableData:any;
-  employeeId: string = '';
   inputValue: string = '';
 
   // del(id: any) {
