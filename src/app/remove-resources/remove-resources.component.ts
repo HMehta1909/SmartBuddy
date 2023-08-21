@@ -34,6 +34,7 @@ export class RemoveResourcesComponent {
     );
   }
 
+
   logout(){
     this.router.navigate(['']);
   }
